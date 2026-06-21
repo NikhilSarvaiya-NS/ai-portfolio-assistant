@@ -1,0 +1,29 @@
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Package managers
+node_modules/
+vendor/
+
+# Build and hosting outputs
+dist/
+build/
+.vercel/
+.cache/
+.project
+.idea/
+.vscode/
+
+# Local server logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

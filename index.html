@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NK - Backend Developer</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="manifest" href="assets/img/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/mobile.css" rel="stylesheet">
+
+  <style>
+    .custom-cursor {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width .2s ease,
+              height .2s ease,
+              border-color .2s ease;
+}
+.custom-cursor.active {
+  width: 40px;
+  height: 40px;
+}
+  </style>
+
+</head>
+
+<body class="index-page">
+  <div class="scroll-progress"></div>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename desktop-logo">Nikhil Sarvaiya</h1>
+        <h1 class="sitename mobile-logo">NS</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero"><i class="bi bi-house mobile-menu-icon"></i> Home</a></li>
+          <li><a href="#about"><i class="bi bi-person mobile-menu-icon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark mobile-menu-icon"></i> Resume</a></li>
+          <li><a href="#services"><i class="bi bi-briefcase mobile-menu-icon"></i> Services</a></li>
+          <li><a href="#portfolio"><i class="bi bi-grid mobile-menu-icon"></i> Portfolio</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope mobile-menu-icon"></i> Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <picture>
+        <source media="(max-width: 768px)"
+                srcset="assets/img/profile/p3-mobile.png">
+
+        <img src="assets/img/profile/p3.png"
+            alt="Nikhil Sarvaiya"
+            data-aos="fade-in">
+      </picture>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Hi, I'm Nikhil Sarvaiya</h2>
+            <p>I'm a <span class="typed" data-typed-items="PHP Developer, Laravel Developer ,Freelancer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            
+            <div class="social-links">
+
+            <a href="https://github.com/NikhilSarvaiya-NS" target="_blank" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="mailto:nikhilsarvaiya.ns@gmail.com" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+
+            <a href="https://instagram.com/nikhil_sarvaiya_nk" target="_blank" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+          </div>
+          <div class="hero-buttons">
+              <a href="assets/cv/nikhilsarvaiya_cv.pdf" target="_blank" class="btn-primary">
+                <i class="bi bi-download"></i> Download CV
+              </a>
+
+              <a href="#contact" class="btn-secondary">
+                <i class="bi bi-envelope"></i> Hire Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section class="achievement-strip">
+      <div class="container">
+
+        <div class="achievement-item">
+          <i class="bi bi-mortarboard-fill"></i>
+          <span>BCA Graduate (8.5+ CGPA)</span>
+        </div>
+
+        <div class="achievement-item">
+          <i class="bi bi-award-fill"></i>
+          <span>99.78 Percentile in HSC</span>
+        </div>
+
+        <div class="achievement-item">
+          <i class="bi bi-code-slash"></i>
+          <span>PHP & Laravel Developer</span>
+        </div>
+
+        <div class="achievement-item">
+          <i class="bi bi-briefcase-fill"></i>
+          <span>Open to Opportunities</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title d-none d-md-block" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>
+          Who I Am?
+        </h2>
+        <p>Motivated and detail-oriented BCA graduate with practical experience in PHP and MySQL web development. Completed a professional PHP internship and developed projects including an e-commerce platform and a customer management system. Skilled in building database-driven applications, implementing CRUD operations, and developing efficient backend solutions. Currently expanding expertise in Laravel and modern web development technologies while seeking opportunities to contribute and grow as a Backend Developer.
+      </p>
+      </div><!-- End Section Title -->
+
+      <!-- Mobile About Layout -->
+      <div class="container mobile-about d-block d-md-none">
+
+        <div class="m-profile-card" data-aos="fade-up">
+          <div class="m-profile-top">
+            <div class="m-profile-avatar">
+              <img src="assets/img/profile/p1.png" alt="Nikhil Sarvaiya">
+              <span class="m-status"></span>
+            </div>
+            <div class="m-profile-info">
+              <h3>Nikhil Sarvaiya</h3>
+              <span class="m-role">Backend Developer</span>
+              <div class="m-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-profile-stats">
+            <div class="m-stat"><h4>2</h4><p>Projects</p></div>
+            <div class="m-stat"><h4>1+</h4><p>Years</p></div>
+            <div class="m-stat"><h4>9+</h4><p>Awards</p></div>
+          </div>
+
+          <div class="m-profile-actions">
+            <a href="assets/cv/nikhilsarvaiya_cv.pdf" target="_blank" class="btn-primary">
+              <i class="bi bi-file-earmark-person"></i> Resume
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="bi bi-envelope"></i> Contact
+            </a>
+          </div>
+
+          <div class="m-social-connect">
+            <a href="https://github.com/NikhilSarvaiya-NS" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:nikhilsarvaiya.ns@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://instagram.com/nikhil_sarvaiya_nk" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="m-section-block" data-aos="fade-up" data-aos-delay="50">
+          <span class="m-tag">About Me</span>
+          <h2 class="m-heading">Transforming Ideas into Digital Reality</h2>
+          <p class="m-text">BCA graduate skilled in PHP, MySQL &amp; modern web development. I build database-driven applications and efficient backend solutions &mdash; with hands-on experience from an e-commerce platform and a customer management system, now expanding into Laravel.</p>
+
+          <div class="m-details-grid">
+            <div class="m-detail"><i class="bi bi-briefcase"></i><div><span>Degree</span><strong>BCA</strong></div></div>
+            <div class="m-detail"><i class="bi bi-geo-alt"></i><div><span>Based In</span><strong>Rajkot, Gujarat</strong></div></div>
+            <div class="m-detail"><i class="bi bi-envelope"></i><div><span>Email</span><strong>nikhilsarvaiya.ns@gmail.com</strong></div></div>
+            <div class="m-detail"><i class="bi bi-check-circle"></i><div><span>Status</span><strong>Open to Work</strong></div></div>
+          </div>
+        </div>
+
+        <div class="m-section-block" data-aos="fade-up" data-aos-delay="100">
+          <span class="m-tag">Core Skills</span>
+          <h2 class="m-heading">Technical Proficiency</h2>
+
+          <div class="m-skills-grid">
+            <div class="m-skill-chip"><span class="m-skill-name">PHP</span><span class="m-skill-bar"><span style="width:85%"></span></span><span class="m-skill-pct">85%</span></div>
+            <div class="m-skill-chip"><span class="m-skill-name">MySQL</span><span class="m-skill-bar"><span style="width:80%"></span></span><span class="m-skill-pct">80%</span></div>
+            <div class="m-skill-chip"><span class="m-skill-name">JavaScript</span><span class="m-skill-bar"><span style="width:70%"></span></span><span class="m-skill-pct">70%</span></div>
+            <div class="m-skill-chip"><span class="m-skill-name">Laravel</span><span class="m-skill-bar"><span style="width:50%"></span></span><span class="m-skill-pct">50%</span></div>
+            <div class="m-skill-chip"><span class="m-skill-name">Git &amp; GitHub</span><span class="m-skill-bar"><span style="width:75%"></span></span><span class="m-skill-pct">75%</span></div>
+          </div>
+        </div>
+
+      </div><!-- End Mobile About Layout -->
+
+      <div class="container d-none d-md-block" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+                  <img src="assets/img/profile/p1.png" class="img-fluid" alt="">
+                  <div class="status-indicator"></div>
+                </div>
+                <h3>Nikhil Sarvaiya</h3>
+                <span class="role">Backend Developer</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>4.5</span>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>2</h4>
+                  <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                  <h4>1+</h4>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>9+</h4>
+                  <p>Awards</p>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+
+                <a href="assets/cv/nikhilsarvaiya_cv.pdf"
+                  target="_blank"
+                  class="btn-primary">
+                  <i class="bi bi-file-earmark-person"></i>
+                  View Resume
+                </a>
+
+                <a href="#contact"
+                  class="btn-secondary">
+                  <i class="bi bi-envelope"></i>
+                  Contact Me
+                </a>
+
+              </div>
+
+              <div class="social-connect">
+
+                <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/NikhilSarvaiya-NS" target="_blank" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <a href="mailto:nikhilsarvaiya.ns@gmail.com" title="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+
+                <a href="https://instagram.com/nikhil_sarvaiya_nk" target="_blank" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">About Me</div>
+                <h2>Transforming Ideas into Digital Reality</h2>
+                <p>I am a BCA graduate with a strong interest in backend and web application development. During my academic journey and professional internship, I gained practical experience in PHP, MySQL, HTML, CSS, JavaScript, and Git. I enjoy building database-driven applications and developing efficient solutions that solve real-world problems.</p>
+                <p>I have worked on projects such as a perfume e-commerce website and a customer management system with quotation generation features. Currently, I am expanding my expertise in Laravel and modern backend technologies while seeking opportunities to contribute, learn, and grow as a software developer.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Degree</span>
+                    <strong>Bachelor Of Computer Application</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-mortarboard"></i>
+                  <div class="detail-content">
+                    <span>Based In</span>
+                    <strong>Rajkot , Gujarat , India</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>nikhilsarvaiya.ns@gmail.com</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div>
+                <!-- 
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+91 8320378711</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-check"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div> -->
+              </div>
+
+              <div class="skills-showcase" data-aos="fade-up" data-aos-delay="150">
+                <div class="section-tag">Core Skills</div>
+                <h3>Technical Proficiency</h3>
+
+                <div class="skills-list skills-animation">
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">PHP</span>
+                      <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">MySQL</span>
+                      <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">JavaScript</span>
+                      <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Laravel</span>
+                      <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Git & GitHub</span>
+                      <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Resume</span>
+        <h2>Education & Experience</h2>
+        <p class="d-none d-md-block">A combination of academic learning, hands-on internship experience, and personal projects has helped me build a solid understanding of web development. My journey reflects continuous learning, practical problem-solving, and a growing expertise in PHP, MySQL, and modern backend technologies.
+        </p>
+      </div><!-- End Section Title -->
+
+      <!-- Mobile Resume Layout -->
+      <div class="container mobile-resume d-block d-md-none">
+
+        <div class="m-resume-group" data-aos="fade-up">
+          <div class="m-resume-heading">
+            <i class="bi bi-briefcase-fill"></i>
+            <h3>Experience</h3>
+          </div>
+
+          <div class="m-exp-card">
+            <div class="m-exp-top">
+              <div class="m-exp-icon"><i class="bi bi-buildings"></i></div>
+              <div>
+                <h4>PHP Intern</h4>
+                <span class="m-company">Enliven Digital Content</span>
+              </div>
+              <span class="m-duration">2025-26</span>
+            </div>
+            <ul class="m-exp-list">
+              <li>Backend development with PHP &amp; MySQL</li>
+              <li>Built &amp; maintained CRUD modules</li>
+              <li>Server-side logic &amp; form validation</li>
+              <li>Debugging existing codebases</li>
+            </ul>
+            <div class="m-tag-row">
+              <span class="m-tag-pill">HTML/CSS/Bootstrap</span>
+              <span class="m-tag-pill">JS &amp; jQuery</span>
+              <span class="m-tag-pill">PHP</span>
+              <span class="m-tag-pill">MySQL</span>
+            </div>
+          </div>
+
+          <div class="m-exp-card">
+            <div class="m-exp-top">
+              <div class="m-exp-icon"><i class="bi bi-laptop"></i></div>
+              <div>
+                <h4>Freelance Web Developer</h4>
+                <span class="m-company">Self-Employed</span>
+              </div>
+              <span class="m-duration">2024-Pres</span>
+            </div>
+            <ul class="m-exp-list">
+              <li>Developing custom portfolio &amp; business websites</li>
+              <li>Building database-driven PHP &amp; Laravel backends</li>
+              <li>Designing secure admin dashboards &amp; CRUD modules</li>
+              <li>Ensuring responsiveness and SEO best practices</li>
+            </ul>
+            <div class="m-tag-row">
+              <span class="m-tag-pill">HTML/CSS/Bootstrap</span>
+              <span class="m-tag-pill">JS &amp; Laravel</span>
+              <span class="m-tag-pill">PHP &amp; MySQL</span>
+              <span class="m-tag-pill">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-resume-group" data-aos="fade-up" data-aos-delay="50">
+          <div class="m-resume-heading">
+            <i class="bi bi-mortarboard-fill"></i>
+            <h3>Education</h3>
+          </div>
+
+          <div class="m-edu-card">
+            <div class="m-edu-top">
+              <div class="m-edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div>
+                <h4>Master of Computer Application</h4>
+                <span class="m-company">Harivandana College (GTU)</span>
+              </div>
+            </div>
+            <div class="m-edu-meta">
+              <span class="m-duration">2026 - 2028</span>
+              <span class="m-badge">Ongoing</span>
+            </div>
+          </div>
+
+          <div class="m-edu-card">
+            <div class="m-edu-top">
+              <div class="m-edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div>
+                <h4>Bachelor of Computer Application</h4>
+                <span class="m-company">Harivandana College (Saurashtra Univ.)</span>
+              </div>
+            </div>
+            <div class="m-edu-meta">
+              <span class="m-duration">2023 - 2026</span>
+              <span class="m-badge accent"><i class="bi bi-award"></i> CGPA 8.5+</span>
+            </div>
+          </div>
+
+          <div class="m-edu-card">
+            <div class="m-edu-top">
+              <div class="m-edu-icon"><i class="bi bi-book"></i></div>
+              <div>
+                <h4>12th Standard</h4>
+                <span class="m-company">Sandipani School</span>
+              </div>
+            </div>
+            <div class="m-edu-meta">
+              <span class="m-duration">2022 - 2023</span>
+              <span class="m-badge accent"><i class="bi bi-award"></i> 99.78 %ile</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="assets/cv/nikhilsarvaiya_cv.pdf" download="Nikhil_Sarvaiya_CV.pdf" target="_blank" class="m-download-cv" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-download"></i> Download Full Resume
+        </a>
+
+      </div><!-- End Mobile Resume Layout -->
+
+      <div class="container d-none d-md-block" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="experience-section">
+              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Experience</span>
+                  <h2>Professional Journey</h2>
+                  <p>
+                  Started with a PHP development internship and progressed through hands-on project development in web technologies. Continuously improving my skills in backend development, database management, and modern frameworks while building practical solutions and gaining real-world experience.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-cards">
+                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-buildings"></i>
+                    </div>
+                    <!-- <div class="period-badge">Current</div> -->
+                  </div>
+                  <div class="card-body">
+                    <h3>PHP Intern</h3>
+                    <p class="company-name">ENLIVEN DIGITAL CONTENT</p>
+                    <span class="duration">2025 - 2026</span>
+                    <p class="description">
+                      • Contributing to backend development of web applications using PHP and MySQL  <br>
+                      • Implementing and maintaining database-driven functionalities, including CRUD modules  <br>
+                      • Developing server-side logic, handling data validation, and managing form submissions  <br>
+                      • Analyzing and resolving backend issues within existing codebases  <br>
+                      • Collaborating with team members to understand requirements and deliver backend features aligned with project needs
+                    </p>
+                    <div class="skills-tags">
+                      <span class="skill-tag">HTML , CSS & BootStrap</span>
+                      <span class="skill-tag">JavaScript & JQuery</span>
+                      <span class="skill-tag">PHP</span>
+                      <span class="skill-tag">MySQL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Freelance Web Developer</h3>
+                    <p class="company-name">SELF-EMPLOYED</p>
+                    <span class="duration">2024 - Present</span>
+                    <p class="description">
+                      • Designing and developing responsive portfolio and business websites for clients and small businesses <br>
+                      • Building dynamic, database-driven web applications utilizing PHP, MySQL, and Laravel MVC frameworks <br>
+                      • Developing customized admin management boards, client dashboards, and interactive quotation systems <br>
+                      • Constructing normalized relational databases with foreign constraints, secure operations, and transaction layers <br>
+                      • Collaborating with clients to translate business needs into custom web functionalities with clean, semantic markup
+                    </p>
+                    <div class="skills-tags">
+                      <span class="skill-tag">HTML , CSS & BootStrap</span>
+                      <span class="skill-tag">JavaScript , JQuery & Laravel</span>
+                      <span class="skill-tag">PHP & MySQL</span>
+                      <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="education-section">
+              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Education</span>
+                  <h2>Academic Background</h2>
+                  <p>
+                  My academic background has equipped me with fundamental knowledge of computer applications, programming, databases, and web development. Combined with hands-on projects and internship experience, it has played a key role in shaping my technical and professional growth.
+                  </p>
+                </div>
+              </div>
+
+              <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+                <div class="timeline-track">
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2026 - 2028 ( ongoing )</span>
+                        <span class="degree-level">Masters</span>
+                      </div>
+                      <h4>Master of Computer Application</h4>
+                      <p class="institution">Harivandana College (Gujarat Technology University)</p>
+                      <p class="description">Currently pursuing a Master of Computer Applications to enhance my knowledge of software development, database systems, web technologies, and modern programming practices while preparing for a professional career in the IT industry.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2023 - 2026</span>
+                        <span class="degree-level">Bachelor</span>
+                      </div>
+                      <h4>Bachelor of Computer Application</h4>
+                      <p class="institution">Harivandana College (Saurashtra University)</p>
+                      <p class="description">Graduated with a consistent CGPA of 8.5+ across all semesters. Developed strong foundations in programming, database management, web development, networking, cybersecurity, and software engineering while completing multiple academic and personal projects.</p>
+                      <div class="achievement">
+                        <i class="bi bi-award"></i>
+                        <span>CGPA 8.5+ </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2022 - 2023</span>
+                        <span class="degree-level">HSC</span>
+                      </div>
+                      <h4>12th Standard</h4>
+                      <p class="institution">Sandipani School</p>
+                      <p class="description">Completed Higher Secondary education with an outstanding 99.78 Percentile, demonstrating strong academic performance, analytical thinking, and problem-solving abilities that supported my transition into the field of computer applications.</p>
+                      <div class="achievement">
+                        <i class="bi bi-award"></i>
+                        <span>99.78 Percentile</span>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  
+                  <!-- CERTIFICATES -->
+                  <!-- <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2022 - 2023</span>
+                        <span class="degree-level">Certificates</span>
+                      </div>
+                      <h4>Professional Certifications</h4>
+                      <div class="certifications-list">
+                        <div class="cert-item">
+                          <span class="cert-name">Advanced UX Research</span>
+                          <span class="cert-year">2023</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Design Leadership</span>
+                          <span class="cert-year">2022</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Digital Strategy</span>
+                          <span class="cert-year">2021</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-bottom mt-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="row align-items-center">
+
+              <div class="col-lg-8">
+                <h3>Want to Know More About My Background?</h3>
+                <p>
+                  Download my complete resume to explore my education, technical skills,
+                  internship experience, projects, and professional qualifications in detail.
+                </p>
+              </div>
+
+              <div class="col-lg-4 text-lg-end">
+                <a href="assets/cv/nikhilsarvaiya_cv.pdf" 
+                   download="Nikhil_Sarvaiya_CV.pdf"
+                   target="_blank"
+                  class="btn btn-accent">
+                  <i class="bi bi-download me-2"></i>
+                  Download Resume
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        
+    </section><!-- /Resume Section -->
+    
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Services</span>
+        <h2>What I Can Offer?</h2>
+        <p>Providing web development solutions with a focus on functionality, performance, and maintainability. From business websites to custom web applications, I aim to deliver practical solutions that meet real-world requirements.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <h4>Portfolio Websites</h4>
+              <p>Professional portfolio websites for students, developers, freelancers, and professionals to showcase skills, projects, and achievements.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Featured</div>
+              <div class="icon-wrapper">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h4>Business Websites</h4>
+              <p>Modern and responsive websites for businesses, startups, shops, and service providers to establish a strong online presence.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>PHP Development</h4>
+              <p>Development of dynamic and database-driven web applications using PHP and MySQL with efficient backend functionality.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-layers"></i>
+              </div>
+              <h4>Laravel Development</h4>
+              <p>Building modern web applications using Laravel with clean architecture, database integration, and scalable backend solutions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h4>Admin Panel Development</h4>
+              <p>Custom admin dashboards and management systems for handling products, customers, quotations, and business operations.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-window-stack"></i>
+              </div>
+              <h4>Custom Web Applications</h4>
+              <p>Tailored web solutions developed according to specific business requirements, workflows, and operational needs.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-box">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3>Let's Build Something Great Together</h3>
+                  <p>
+                    Interested in working together or discussing a project? Feel free to get in touch and let's turn your ideas into reality.
+                  </p>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                  <a href="#contact" class="cta-btn">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Featured Projects</h2>
+        <p>
+        A collection of projects that showcase my skills in PHP, MySQL, web development, database management, and backend application development.
+        </p>
+      </div><!-- End Section Title -->
+
+      <!-- Mobile Portfolio Grid -->
+      <div class="container mobile-portfolio d-block d-md-none">
+        <div class="m-portfolio-grid" data-aos="fade-up" data-aos-delay="100">
+
+          <a class="m-portfolio-card" href="https://github.com/NikhilSarvaiya-NS/aromea-ecommerce-web-app" target="_blank">
+            <div class="m-portfolio-img">
+              <img src="assets/img/portfolio/aromea.webp" alt="AROMEA - Perfume E-Commerce" loading="lazy">
+              <span class="m-portfolio-gh"><i class="bi bi-github"></i></span>
+            </div>
+            <div class="m-portfolio-body">
+              <span class="m-portfolio-cat">E-Commerce</span>
+              <h4>AROMEA Perfume Store</h4>
+              <div class="m-portfolio-tags">
+                <span>PHP</span><span>MySQL</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="m-portfolio-card" href="https://github.com/NikhilSarvaiya-NS/customer-management-system" target="_blank">
+            <div class="m-portfolio-img">
+              <img src="assets/img/portfolio/cms.jpg" alt="Customer Management System" loading="lazy">
+              <span class="m-portfolio-gh"><i class="bi bi-github"></i></span>
+            </div>
+            <div class="m-portfolio-body">
+              <span class="m-portfolio-cat">Business App</span>
+              <h4>Customer Management System</h4>
+              <div class="m-portfolio-tags">
+                <span>PHP</span><span>CRUD</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <a href="#contact" class="m-portfolio-cta" data-aos="fade-up" data-aos-delay="150">
+          <i class="bi bi-rocket-takeoff"></i> Let's Work Together
+        </a>
+      </div><!-- End Mobile Portfolio Grid -->
+
+      <div class="container d-none d-md-block" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Work</li>
+            <li data-filter=".filter-web">Web Application</li>
+
+            <!-- <li data-filter=".filter-development">Development</li> -->
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/aromea.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">E-Commerce Website</span>
+                      <h4>AROMEA - A Perfume E-Commerce Site</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a> -->
+                      <a href="https://github.com/NikhilSarvaiya-NS/aromea-ecommerce-web-app" class="portfolio-details" target="_blank">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">E-Commerce</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/cms.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Business Application</span>
+                      <h4>Customer Management System</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a> -->
+                      <a href="https://github.com/NikhilSarvaiya-NS/customer-management-system" class="portfolio-details" target="_blank">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">CRUD</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Brand Strategy</span>
+                      <h4>Market Positioning</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Consulting</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Full Stack</span>
+                      <h4>Custom Application</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Art Direction</span>
+                      <h4>Campaign Design</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Creative</span>
+                    <span class="tag">Campaign</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Product</span>
+                      <h4>Mobile Experience</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Mobile</span>
+                    <span class="tag">UI/UX</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+
+        <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3>Interested in Working Together?</h3>
+              <p>
+              Feel free to explore my projects and get in touch for job opportunities, freelance work, or professional collaborations.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Let's Connect</h2>
+        <p>
+        <p>
+        Interested in working together, discussing a project, or exploring job opportunities? Feel free to reach out using the contact information below or send a message directly through the form.
+        </p>
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-item mb-4 mt-2">
+              <div class="icon-wrapper">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+
+              <div>
+                <h3>Location</h3>
+                <p>
+                  <a href="https://www.google.com/maps?q=Rajkot,Gujarat,India"
+                    target="_blank">
+                    Rajkot, Gujarat, India
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item mb-4">
+              <div class="icon-wrapper">
+                <i class="bi bi-linkedin"></i>
+              </div>
+
+              <div>
+                <h3>LinkedIn</h3>
+                <p>
+                  <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank">
+                    linkedin.com/in/nikhil-sarvaiya
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item mb-4">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:nikhilsarvaiya.ns@gmail.com">
+                    nikhilsarvaiya.ns@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="info-item mb-1">
+              <div class="icon-wrapper">
+                <i class="bi bi-telephone"></i>
+              </div>
+
+              <div>
+                <h3>Phone</h3>
+                <p>
+                  <a href="tel:+918320378711">
+                    +91 8320378711
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://formsubmit.co/nikhilsarvaiya.ns@gmail.com"
+                  method="POST"
+                  class="php-email-form">
+
+              <input type="hidden" name="_subject" value="New Portfolio Inquiry">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="row gy-4">
+
+
+                <div class="col-md-6">
+                  <label class="form-label">
+                    <i class="bi bi-person me-2"></i>Full Name
+                  </label>
+                  <input type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="e.g. John Smith"
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">
+                    <i class="bi bi-envelope me-2"></i>Email Address
+                  </label>
+                  <input type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="e.g. john@example.com"
+                        required>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">
+                    <i class="bi bi-chat-left-text me-2"></i>Subject
+                  </label>
+                  <input type="text"
+                        name="subject"
+                        class="form-control"
+                        placeholder="e.g. PHP Developer Job Opportunity"
+                        required>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">
+                    <i class="bi bi-pencil-square me-2"></i>Message
+                  </label>
+                  <textarea class="form-control"
+                            name="message"
+                            rows="6"
+                            placeholder="e.g. We are looking for a PHP Developer to join our team..."
+                            required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+
+                  <div class="loading">Loading</div>
+
+                  <div class="error-message"></div>
+
+                  <div class="sent-message">
+                    Your message has been sent successfully.
+                  </div>
+
+                <button type="submit">
+                  
+                  Send Message
+                </button>
+
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <!-- Mobile Footer -->
+    <div class="container m-footer d-block d-md-none">
+      <div class="m-footer-brand">
+        <span class="m-footer-name">Nikhil Sarvaiya</span>
+        <span class="m-footer-role">Backend Developer</span>
+      </div>
+
+      <div class="social-links m-footer-social">
+        <a href="https://github.com/NikhilSarvaiya-NS" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:nikhilsarvaiya.ns@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://instagram.com/nikhil_sarvaiya_nk" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+
+      <div class="m-footer-copy">© 2026 Nikhil Sarvaiya. All Rights Reserved.</div>
+    </div><!-- End Mobile Footer -->
+
+    <div class="container footer-top d-none d-md-block">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Nikhil Sarvaiya</span>
+          </a>
+
+          <p>
+          Thank you for visiting my portfolio. Feel free to explore my projects and get in touch for professional opportunities, collaborations, or discussions related to web development and technology.
+          </p>
+          <div class="social-links d-flex mt-4">
+
+            <a href="https://github.com/NikhilSarvaiya-NS" target="_blank" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/nikhil-sarvaiya" target="_blank" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="mailto:nikhilsarvaiya.ns@gmail.com" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+
+            <a href="https://instagram.com/nikhil_sarvaiya_nk" target="_blank" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Education & Experience</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#contact">E-Commerce Site Development</a></li>
+            <li><a href="#contact">Portfolio Site Development</a></li>
+            <li><a href="#contact">Admin-Panel Development</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> <span>+91 8320378711</span></p>
+          <p><strong>Email:</strong> <span>nikhilsarvaiya.ns@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+<!-- 
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        All the links in the footer should remain intact.
+        You can delete the links only if you've purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: [buy-url]
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div> -->
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="ai-assistant-btn">
+    <!-- <i class="bi bi-stars"></i> -->
+    <span>AI</span>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <div class="custom-cursor"></div>
+
+
+<script>
+const cursor = document.querySelector('.custom-cursor');
+
+let mouseX = 0;
+let mouseY = 0;
+
+let posX = 0;
+let posY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animate() {
+  posX += (mouseX - posX) * 0.15;
+  posY += (mouseY - posY) * 0.15;
+
+  cursor.style.left = posX + 'px';
+  cursor.style.top = posY + 'px';
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>  
+<script>
+
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('active');
+  });
+
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('active');
+  });
+});
+
+
+
+
+let idleTimer;
+
+document.addEventListener("mousemove", () => {
+
+  cursor.classList.remove("idle");
+
+  clearTimeout(idleTimer);
+
+  idleTimer = setTimeout(() => {
+    cursor.classList.add("idle");
+  }, 2000);
+
+});
+</script>
+
+<div id="ai-chat">
+
+  <div class="ai-header">
+
+    <div class="ai-profile">
+
+      <div class="ai-avatar">
+        Z
+      </div>
+
+      <div class="ai-info">
+
+        <h4>Zakrom</h4>
+
+        <div class="ai-status mt-1">
+
+          <span class="status-dot"></span>
+
+          Online - Powered By NS.
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button id="close-ai">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+  </div>
+
+  <div id="ai-messages">
+
+    <div class="ai-message welcome-card">
+
+      <h4>👋 Hi, I'm Zakrom</h4>
+
+      <p>
+        Ask me anything about skills,
+        projects, services or experience.
+      </p>
+
+      <div class="ai-quick-actions">
+
+        <button onclick="quickAsk('What skills does Nikhil have?',event)">
+          🚀 Skills
+        </button>
+
+        <button onclick="quickAsk('Show me Nikhil projects',event)">
+          💼 Projects
+        </button>
+
+        <button onclick="quickAsk('How can I contact Nikhil?',event)">
+          📞 Contact
+        </button>
+
+        <button onclick="quickAsk('Tell me about Nikhil experience',event)">
+          📄 Experience
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ai-input-area">
+
+    <input
+      id="ai-input"
+      type="text"
+      placeholder="Ask something..."
+    >
+
+    <button id="send-ai">
+      <i class="bi bi-send-fill"></i>
+    </button>
+
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+
+</html>
