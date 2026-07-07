@@ -1,0 +1,159 @@
+{
+  "name": "Nikhil Sarvaiya",
+  "title": "Backend Developer",
+  "bio": "Motivated and detail-oriented BCA graduate with practical experience in PHP and MySQL web development. Completed a professional PHP internship and developed projects including an e-commerce platform and a customer management system. Skilled in building database-driven applications, implementing CRUD operations, and developing efficient backend solutions. Currently expanding expertise in Laravel and modern web development technologies while seeking opportunities to contribute and grow as a Backend Developer.",
+  "location": "Rajkot, Gujarat, India",
+  "contact": {
+    "email": "nikhilsarvaiya.ns@gmail.com",
+    "github": "https://github.com/NikhilSarvaiya-NS",
+    "linkedin": "https://linkedin.com/in/nikhil-sarvaiya",
+    "instagram": "https://instagram.com/nikhil_sarvaiya_nk",
+    "phone": "+91 8320378711"
+  },
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Harivandana College (Gujarat Technology University)",
+      "duration": "2026 - 2028",
+      "status": "ongoing",
+      "description": "Currently pursuing a Master of Computer Applications to enhance my knowledge of software development, database systems, web technologies, and modern programming practices while preparing for a professional career in the IT industry."
+    },
+    {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "Harivandana College (Saurashtra University)",
+      "duration": "2023 - 2026",
+      "achievement": "CGPA 8.5+",
+      "description": "Graduated with a consistent CGPA of 8.5+ across all semesters. Developed strong foundations in programming, database management, web development, networking, cybersecurity, and software engineering while completing multiple academic and personal projects."
+    },
+    {
+      "degree": "12th Standard (HSC)",
+      "institution": "Sandipani School",
+      "duration": "2022 - 2023",
+      "achievement": "99.78 Percentile",
+      "description": "Completed Higher Secondary education with an outstanding 99.78 Percentile, demonstrating strong academic performance, analytical thinking, and problem-solving abilities that supported my transition into the field of computer applications."
+    }
+  ],
+  "experience": [
+    {
+      "role": "PHP Intern",
+      "company": "ENLIVEN DIGITAL CONTENT",
+      "duration": "2025 - 2026",
+      "description": "Contributing to backend development of web applications using PHP and MySQL. Implementing and maintaining database-driven functionalities, including CRUD modules. Developing server-side logic, handling data validation, and managing form submissions. Analyzing and resolving backend issues within existing codebases. Collaborating with team members to understand requirements and deliver backend features aligned with project needs.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "BootStrap",
+        "JavaScript",
+        "JQuery",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "role": "Freelance Web Developer",
+      "company": "Self-Employed",
+      "duration": "2024 - Present",
+      "description": "Designing and developing responsive portfolio and business websites for clients and local businesses. Building dynamic, database-driven web applications utilizing PHP, MySQL, and Laravel MVC frameworks. Developing customized admin management boards, client dashboards, and interactive quotation systems. Constructing normalized relational databases with foreign constraints, secure operations, and transaction layers. Collaborating with clients to translate business needs into custom web functionalities with clean, semantic markup.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "BootStrap",
+        "JavaScript",
+        "JQuery",
+        "PHP",
+        "MySQL",
+        "Laravel",
+        "Git",
+        "GitHub"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "PHP",
+      "proficiency": "85%"
+    },
+    {
+      "name": "MySQL",
+      "proficiency": "80%"
+    },
+    {
+      "name": "JavaScript",
+      "proficiency": "70%"
+    },
+    {
+      "name": "Laravel",
+      "proficiency": "50%"
+    },
+    {
+      "name": "Git & GitHub",
+      "proficiency": "75%"
+    },
+    {
+      "name": "HTML/CSS/Bootstrap",
+      "proficiency": "Advanced"
+    },
+    {
+      "name": "jQuery",
+      "proficiency": "Intermediate"
+    }
+  ],
+  "services": [
+    {
+      "name": "Portfolio Websites",
+      "description": "Professional portfolio websites for students, developers, freelancers, and professionals to showcase skills, projects, and achievements."
+    },
+    {
+      "name": "Business Websites",
+      "description": "Modern and responsive websites for businesses, startups, shops, and service providers to establish a strong online presence."
+    },
+    {
+      "name": "PHP Development",
+      "description": "Development of dynamic and database-driven web applications using PHP and MySQL with efficient backend functionality."
+    },
+    {
+      "name": "Laravel Development",
+      "description": "Building modern web applications using Laravel with clean architecture, database integration, and scalable backend solutions."
+    },
+    {
+      "name": "Admin Panel Development",
+      "description": "Custom admin dashboards and management systems for handling products, customers, quotations, and business operations."
+    },
+    {
+      "name": "Custom Web Applications",
+      "description": "Tailored web solutions developed according to specific business requirements, workflows, and operational needs."
+    }
+  ],
+  "projects": [
+    {
+      "name": "AROMEA Perfume Store",
+      "category": "E-Commerce Website",
+      "description": "A Perfume E-Commerce Site. Full-stack e-commerce platform for perfume products.",
+      "link": "https://github.com/NikhilSarvaiya-NS/aromea-ecommerce-web-app",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "E-Commerce"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "Customer Management System",
+      "category": "Business Application",
+      "description": "Business App with CRUD operations. Customer relationship management system with admin panel.",
+      "link": "https://github.com/NikhilSarvaiya-NS/customer-management-system",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "CRUD"
+      ],
+      "year": "2026"
+    }
+  ],
+  "stats": {
+    "projects": "2",
+    "experience_years": "1+",
+    "awards": "9+",
+    "rating": "4.5"
+  }
+}
