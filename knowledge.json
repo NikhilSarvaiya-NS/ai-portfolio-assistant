@@ -7,8 +7,7 @@
     "email": "nikhilsarvaiya.ns@gmail.com",
     "github": "https://github.com/NikhilSarvaiya-NS",
     "linkedin": "https://linkedin.com/in/nikhil-sarvaiya",
-    "instagram": "https://instagram.com/nikhil_sarvaiya_nk",
-    "phone": "+91 8320378711"
+    "instagram": "https://instagram.com/nikhil_sarvaiya_nk"
   },
   "education": [
     {
@@ -70,32 +69,25 @@
   ],
   "skills": [
     {
-      "name": "PHP",
-      "proficiency": "85%"
+      "name": "PHP"
     },
     {
-      "name": "MySQL",
-      "proficiency": "80%"
+      "name": "MySQL"
     },
     {
-      "name": "JavaScript",
-      "proficiency": "70%"
+      "name": "JavaScript"
     },
     {
-      "name": "Laravel",
-      "proficiency": "50%"
+      "name": "Laravel"
     },
     {
-      "name": "Git & GitHub",
-      "proficiency": "75%"
+      "name": "Git & GitHub"
     },
     {
-      "name": "HTML/CSS/Bootstrap",
-      "proficiency": "Advanced"
+      "name": "HTML/CSS/Bootstrap"
     },
     {
-      "name": "jQuery",
-      "proficiency": "Intermediate"
+      "name": "jQuery"
     }
   ],
   "services": [
